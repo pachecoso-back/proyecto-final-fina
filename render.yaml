@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: proyecto-final-fina
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python Proyecto_GP4/manage.py migrate && python Proyecto_GP4/manage.py runserver 0.0.0.0:8000
+    port: 8000
